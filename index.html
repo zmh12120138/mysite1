@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minghui Zhao</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/huandengpian.css">
+    <script language="javascript" type="text/javascript" src="js/huandengpian.js"> </script>
+
+<script>
+  $(document).ready(function(){
+      $(document).mousemove(function(ent){
+          var x=ent.pageX+10+'px';
+          var y=ent.pageY+15+'px';
+          $('#mouse_img').css({"position":"absolute","left":x,"top":y});
+      })//实现鼠标跟随的效果
+      $('#jiangli_img').mouseover(function(){
+          $('#jiangli_img').css({"width":"700px"});
+      })
+      $('#jiangli_img').mouseout(function(){
+          $('#jiangli_img').css({"width":"400px"});
+      })
+      $('#btn1').click(function(){
+          $('#tb1').show();
+          $('#tb2').hide();
+      });
+      $('#btn2').click(function(){
+          $('#tb1').hide();
+          $('#tb2').show();
+
+      });
+  })
+</script>
+    <script>
+        function sunmit_onclick(){
+            var str1=document.getElementById('xingming').value;
+            var str2=document.getElementById('shouji').value;
+            var str3=document.getElementById('liuyan1').value;
+            var str4=document.getElementById('errMsg');
+            if(str1==''){
+                str4.innerHTML='姓名不能为空!';
+                return false;
+            }
+            if(str3==''){
+                str4.innerHTML='留言内容不能为空!';
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+
+    </div>
+   <div style="padding-right: 100px">
+       <ul class="nav navbar-nav navbar-right" style="display: block">
+           <li class="active"><a href="#">关于我</a> </li>
+           <li><a href="#reward">所获奖励</a> </li>
+           <li><a href="#skills">个人技能</a> </li>
+           <li>
+               <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+                   更多
+                   <span class="caret"></span>
+               </a>
+               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                   <li role="presentation">
+                       <a role="menuitem" tabindex="-1"  data-toggle="modal" data-target="#myModal1">详细信息</a>
+                   </li>
+                   <li role="presentation">
+                       <a role="menuitem" tabindex="-1" data-toggle="modal" data-target="#myModal2">个人爱好</a>
+                   </li>
+                   <li role="presentation" class="divider"></li>
+                   <li role="presentation">
+                       <a role="menuitem" tabindex="-1" data-toggle="modal" data-target="#myModal3">自我认识</a>
+                   </li>
+               </ul>
+
+           </li>
+       </ul>
+   </div>
+</nav>
+
+<div style="margin-top: 20px;padding-top: 50px;border-top: 1px solid #EEEEEE">
+   <div class="container">
+       <p class="h4 center-block" style="text-align: center" ><b>About me</b></p>
+      <div class="pull-right" style="padding-right: 100px">
+          <br>
+          <p class="h2"> &nbsp; &nbsp; &nbsp;赵明辉</p>
+          <br>
+          <p class="lead">上海大学管理学院 &nbsp;<small>2012级本科生</small></p>
+          <p class="lead">信息管理与信息系统</p>
+          <address>
+              <abbr title="email">Email:</abbr> zmhshu@live.cn<br>
+              <abbr title="address">Address:</abbr> 上海市宝山区上大路98号
+          </address>
+      </div>
+       <div class="pull-left" style="padding-left: 100px">
+           <p><small>座右铭</small></p>
+           <p class="h1">经邦济世，自强不息</p>
+           <img src="img/自强不息.jpg" width="320px">
+           <br>
+       </div>
+   </div>
+    <br>
+    <br>
+</div>
+<a name="所获奖励"></a>
+<div  id="reward" style="margin-top: 20px;padding-top: 20px;border-top: 1px solid #EEEEEE">
+    <div  class="container" style="text-align: center">
+        <br>
+        <p class="h4 center-block" style="text-align: center" ><b>Reward & Practice</b></p>
+        <br>
+        <div class="pull-left" style="padding-left: 100px">
+            <marquee style="WIDTH: 500px; HEIGHT: 200px" scrollamount="2" direction="up" >
+                <p>2015年11月&nbsp;&nbsp;上海大学优秀学生</p>
+                <p>2015年10月&nbsp;&nbsp;学业优秀特等奖学金</p>
+                <p>2015年10月&nbsp;&nbsp;上海市奖学金</p>
+                <p>2015年6月&nbsp;&nbsp;第五届电子商务三创赛上海赛区三等奖</p>
+                <p>2015年5月&nbsp;&nbsp;上海大学第八次学生代表大会学生代表</p>
+                <p>2015年3月&nbsp;&nbsp;上海大学“百优团员”</p>
+                <p>2014年9月&nbsp;&nbsp;上海大学优秀学生</p>
+                <p>2014年9月&nbsp;&nbsp;学业优秀二等奖学金</p>
+                <p>2014年9月&nbsp;&nbsp;国家励志奖学金</p>
+                <p>2013年9月&nbsp;&nbsp;上海大学管理学院优秀学生干部</p>
+                <p>2015年6月-2015年8月&nbsp;&nbsp;上海应时为能源技术有限公司&nbsp;&nbsp;WEB前端实习</p>
+                <p>2012年9月-2014年6月&nbsp;&nbsp;上海大学管理学院&nbsp;&nbsp;组织部副部长</p>
+            </marquee >
+        </div>
+        <div class="center-block">
+            <div id="fade_focus" class="center-block" >
+                <div class="loading pull-right" style="padding-right: 100px">Loading...<br /><img src="http://www.codefans.net/jscss/demoimg/201002/loading.gif" width="100" height="100" /></div>
+                <ul>
+                    <li><a href="http://www.codefans.net" target="_blank"><img src="img/奖学金.PNG" width="443" height="300" alt="奖学金" /></a></li>
+                    <li><a href="/" target="_blank"><img src="img/优秀学生.PNG" width="443" height="300" alt="优秀学生" /></a></li>
+                    <li><a href="/" target="_blank"><img src="img/三创赛.PNG" width="443" height="300" alt="三创赛" /></a></li>
+                    <li><a href="/" target="_blank"><img src="img/百优团员.PNG" width="443" height="300" alt="百优团员" /></a></li>
+                </ul>
+            </div>
+            <br>
+            <br>
+        </div>
+
+    </div>
+</div>
+
+<a name="个人技能"></a>
+<div  id="skills" style="margin-top: 20px;padding-top: 20px;border-top: 1px solid #EEEEEE">
+ <div class="container">
+     <br>
+     <p class="h4 center-block" style="text-align: center" ><b>Skills</b></p>
+   <div style="text-align: center">
+       <br>
+       <button id="btn1" class="btn btn-primary"><span class="glyphicon glyphicon-list">&nbsp;查看编程语言部分</span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <button id="btn2" class="btn btn-info"><span class="glyphicon glyphicon-list">&nbsp;查看工具软件部分</span></button>
+   </div>
+    <br>
+    <table id="tb1" class="table table-bordered table-hover" style="text-align: center">
+        <tbody>
+        <tr class="success">
+            <td></td>
+            <td>html</td>
+            <td>css</td>
+            <td>bootstrap</td>
+            <td>java</td>
+            <td>android</td>
+            <td>javasctipt</td>
+            <td>jquery</td>
+        </tr>
+        <tr>
+            <td class="success">了解</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="success">熟悉</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="success">熟练</td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td></td>
+            <td></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+        </tr>
+        <tr class="success">
+            <td></td>
+            <td>node.js</td>
+            <td>ios</td>
+            <td>opencv</td>
+            <td>php</td>
+            <td>jsp</td>
+            <td>ejs</td>
+            <td>sql</td>
+        </tr>
+        <tr>
+            <td class="success">了解</td>
+            <td></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="success">熟悉</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="success">熟练</td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="glyphicon glyphicon-saved"></span></td>
+        </tr>
+        </tbody>
+        </table>
+    <table id="tb2" class="table table-bordered table-hover" style="display: none;text-align: center">
+          <tr class="success">
+              <td></td>
+              <td>photoshop</td>
+              <td>flash</td>
+              <td>dreamweaver</td>
+              <td>premiere</td>
+              <td>audition</td>
+              <td>eclipse</td>
+              <td>myeclipse</td>
+          </tr>
+          <tr>
+              <td class="success">了解</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td class="success">熟悉</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+          </tr>
+          <tr>
+              <td class="success">熟练</td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr class="success">
+              <td></td>
+              <td>mysql</td>
+              <td>sql server</td>
+              <td>sublime</td>
+              <td>webstorm</td>
+              <td>mongodb</td>
+              <td>github</td>
+              <td>office</td>
+          </tr>
+          <tr>
+              <td class="success">了解</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td class="success">熟悉</td>
+              <td></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td class="success">熟练</td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+              <td></td>
+              <td><span class="glyphicon glyphicon-saved"></span></td>
+          </tr>
+      </table>
+    <br>
+
+    <p class="h3"><b>个人技能综述:</b></p>
+    <ol style="padding-left: 70px">
+        <li>&nbsp;&nbsp;电脑重装（U盘装系统）</li>
+        <li>&nbsp;&nbsp;熟练使用一些主流的IDE</li>
+        <li>&nbsp;&nbsp;开发简单C语言、java、安卓应用程序</li>
+        <li>&nbsp;&nbsp;使用工具软件进行视频、音频、图像的处理</li>
+        <li>&nbsp;&nbsp;使用node.js以及express框架构建简单WEB应用</li>
+        <li>&nbsp;&nbsp;使用bootstrap、javascript制作网页并发布（申请域名、云主机、DNS解析等）</li>
+        <li>&nbsp;&nbsp;熟练使用mysql、sql server等关系型数据库以及mongodb对象型数据库（NoSql)</li>
+    </ol>
+    <br>
+    <br>
+ </div>
+</div>
+<div class="container" style="margin-top: 20px;padding-top: 20px;border-top: 1px solid #EEEEEE">
+    <p>&copy; 2015 Minghui Zhao</p>
+</div>
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Detailed information
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p class="center-block">民族：&nbsp;&nbsp;汉族</p>
+                <p class="center-block">籍贯：&nbsp;&nbsp;河北邯郸</p>
+                <p class="center-block">生日：&nbsp;&nbsp;1995年8月21日（公历）/7月26日（农历）</p>
+                <p class="center-block">etc</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabe2">
+                    Personal hobby
+                </h4>
+            </div>
+            <div class="modal-body">
+               <div class="container center-block">
+                 <p>Music:&nbsp;许嵩、周杰伦</p>
+                 <p>Sports:&nbsp;乒乓、田径、游泳</p>
+                 <p>etc</p>
+               </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabe3">
+                    Self cognition
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="container center-block">
+                 <p>1.性格稳重、内敛，但易相处</p>
+                 <p>2.时间观念强，无非常特殊情况从不迟到</p>
+                 <p>3.做事态度认真，负责任，能吃苦</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<p id="mouse_img">欢迎您！</p>
+
+
+</body>
+</html>
